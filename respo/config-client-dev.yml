@@ -1,1 +1,14 @@
 foo: foo version 2
+
+server:
+  port: 8698
+spring:
+  application:
+    name: config-client
+  cloud:
+    consul:
+      host: localhost
+      port: 8900
+      discovery:
+        ServiceName: config-client
+        prefer-ip-address: true
